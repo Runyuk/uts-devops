@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 import psycopg2
-
+#test ci/cd
 # ── Data mahasiswa ──────────────────────────────────────────────
 data = {
     'Nama': ['Alice', 'Bob', 'Charlie', 'Diana', 'Eve',
