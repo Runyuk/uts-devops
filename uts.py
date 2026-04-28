@@ -1,8 +1,8 @@
 import os
 import pandas as pd
 import psycopg2
-#test ci/cd
-# ── Data mahasiswa ──────────────────────────────────────────────
+
+#Data mahasiswa
 data = {
     'Nama': ['Alice', 'Bob', 'Charlie', 'Diana', 'Eve',
              'Faris', 'Gita', 'Hendra', 'Indra', 'Julia'],
@@ -11,7 +11,7 @@ data = {
 
 df = pd.DataFrame(data)
 
-# ── Analisis data ───────────────────────────────────────────────
+#Analisis data
 df['Status'] = df['Nilai'].apply(
     lambda x: 'Lulus' if x >= 75 else 'Tidak Lulus'
 )
@@ -34,7 +34,7 @@ print(f'Jumlah Lulus     : {jumlah_lulus} mahasiswa')
 print(f'Tidak Lulus      : {jumlah_tidak_lulus} mahasiswa')
 print('=' * 40)
 
-# ── Koneksi ke PostgreSQL ───────────────────────────────────────
+#Koneksi ke PostgreSQL
 DB_HOST = os.getenv('DB_HOST', 'localhost')
 DB_NAME = os.getenv('DB_NAME', 'nilaidb')
 DB_USER = os.getenv('DB_USER', 'user')
@@ -49,7 +49,7 @@ try:
     )
     cursor = conn.cursor()
 
-    # Buat tabel jika belum ada
+    # Buat tabel
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS hasil_nilai (
             id SERIAL PRIMARY KEY,

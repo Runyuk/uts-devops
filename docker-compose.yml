@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
 
-  # ── Service 1: Database PostgreSQL ──────────────────────────
+  #Service 1: Database PostgreSQL
   db:
     image: postgres:15
     environment:
@@ -10,10 +10,9 @@ services:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
     volumes:
-      # Volume agar data tidak hilang saat container dimatikan
       - postgres_data:/var/lib/postgresql/data
 
-  # ── Service 2: Aplikasi Python ──────────────────────────────
+  #Service 2: Aplikasi Python
   app:
     build: .
     environment:
@@ -24,7 +23,5 @@ services:
     depends_on:
       # Aplikasi baru berjalan setelah service 'db' siap
       - db
-
-# Deklarasi named volume untuk PostgreSQL
 volumes:
   postgres_data:
