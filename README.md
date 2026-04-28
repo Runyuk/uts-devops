@@ -22,7 +22,7 @@ Base image `python:3.9-slim` dipilih karena ukurannya yang ringan namun sudah cu
 
 **1. Clone repositori**
 ```bash
-git clone https://github.com/username/uts-devops.git
+git clone https://github.com/Runyuk/uts-devops.git
 cd uts-devops
 ```
 
