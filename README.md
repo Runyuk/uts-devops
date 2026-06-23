@@ -187,6 +187,7 @@ terraform destroy -auto-approve
 
 **Output sukses:**
 ```
+![Dokumentasi output](outputfaruq.jpeg)
 Destroy complete! Resources: 1 destroyed.
 ```
 
