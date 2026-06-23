@@ -112,9 +112,6 @@ docker run --rm -it \
 PLAY RECAP
 ```
 ![Dokumentasi output](outputfaruq.jpeg)
-```
-server_uas_analitik : ok=3 changed=2 failed=0
-```
 
 Status `failed=0` dengan warna hijau/kuning menandakan semua task berhasil.
 
