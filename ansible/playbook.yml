@@ -15,9 +15,7 @@
     - name: Instalasi pustaka Data Science dari requirements.txt
       pip:
         name:
-          - numpy==1.26.4
-          - pandas==2.2.2
-          - psycopg2-binary==2.9.9
-          - flake8==6.0.0
+          - pandas
+          - psycopg2-binary
         executable: pip3
         extra_args: --break-system-packages
