@@ -110,7 +110,9 @@ docker run --rm -it \
 **Output sukses (PLAY RECAP):**
 ```
 PLAY RECAP
-
+```
+![Dokumentasi output](outputfaruq.jpeg)
+```
 server_uas_analitik : ok=3 changed=2 failed=0
 ```
 
@@ -186,7 +188,7 @@ terraform destroy -auto-approve
 ```
 
 **Output sukses:**
-![Dokumentasi output](outputfaruq.jpeg)
+
 ```
 Destroy complete! Resources: 1 destroyed.
 ```
